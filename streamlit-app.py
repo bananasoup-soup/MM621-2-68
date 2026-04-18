@@ -42,7 +42,8 @@ def train_model():
   else:
     df = pd.read_csv('customer_churn_mock.csv')
 #เอาทุกวันยกเว้น churn column เดียว
-  X = df.drop('Churn', axis=1)
+    
+  X = df[['Age', 'Tenure_Months', 'Monthly_Charge', 'Support_Tickets']]
   y = df['Churn']
 #รันโมเดล
   model = RandomForestClassifier(n_estimators=100, random_state=42)

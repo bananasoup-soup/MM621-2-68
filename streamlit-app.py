@@ -53,9 +53,9 @@ def train_model():
 model = train_model()
 
 #การออกแบบส่วนแสดงผล (User Interface) ที่จะใช้บน Streamlit
-st.set_page_config(page_title='Customer Churn Prediction by 6802115110', layout='wide', page_icon=":bar_chart:")
+st.set_page_config(page_title='Customer Churn Prediction', layout='wide', page_icon=":bar_chart:")
 
-st.title(":bar_chart: Customer Churn Prediction by 680211")
+st.title(":bar_chart: Customer Churn Prediction by 6802115110")
 st.markdown("แอปพลิเคชั่นสำหรับทีมการตลาด **ประเมินความเสี่ยง** และ **จัดแคมเปญรักษาลูกค้า** เชิงรุก")
 st.divider()
 
